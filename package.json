@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon -r dotenv-flow/config src/index.js --node-env=development",
-    "test": "jest --setupFiles dotenv-flow/config --coverage"
+    "test": "jest --setupFiles dotenv-flow/config --coverage",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "jest": {
     "testEnvironment": "node"
