@@ -1,0 +1,38 @@
+{
+  "name": "abv-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -r dotenv-flow/config src/index.js --node-env=development",
+    "test": "jest --setupFiles dotenv-flow/config --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mongodb": "^3.6.3",
+    "mongoose": "^5.11.13",
+    "multer": "^1.4.2",
+    "puppeteer": "^3.3.0",
+    "sharp": "^0.27.2",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "dotenv-flow": "^3.2.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
